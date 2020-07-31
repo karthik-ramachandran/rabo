@@ -1,0 +1,202 @@
+{
+	"id": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+	"name": "Rabobank_Customer_Statement_Processor",
+	"description": "",
+	"order": [
+		"a0d593d6-6e52-a205-40f4-04576e6b0486",
+		"35eb478b-45c8-42d5-045c-f6d3ec212a14",
+		"870afa03-bc36-88ff-685a-ddda2a0de698",
+		"c723ede4-986c-e58a-f027-7e841d74bfd4",
+		"1cad64e2-d044-04d2-b7f3-cdc79a3f02f1",
+		"017355e8-902f-1717-4b69-49e5496fe8b5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1595862087762,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "017355e8-902f-1717-4b69-49e5496fe8b5",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Any other situation ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595864236788,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "\"\""
+		},
+		{
+			"id": "1cad64e2-d044-04d2-b7f3-cdc79a3f02f1",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1595863850041,
+			"name": "Error during parsing JSON ",
+			"description": "",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"responses": [],
+			"rawModeData": "[\n  {\n    \"reference\": 194261,\n    \"accountNumber\": \"NL91RABO0315273637\",\n    \"description\": \"Clothes from Jan Bakker\",\n    \"startBalance\": 21.6,\n    \"mutation\": -41.83,\n    \"endBalance\": -20.23\n  },\n  {\n    \"reference\": 194261,\n  "
+		},
+		{
+			"id": "35eb478b-45c8-42d5-045c-f6d3ec212a14",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "duplicate reference and correct balance ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595862301255,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL91RABO0315273637\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 21.6,\r\n    \"mutation\": -41.83,\r\n    \"endBalance\": -20.23\r\n  },\r\n  {\r\n    \"reference\": 112806,\r\n    \"accountNumber\": \"NL27SNSB0917829871\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 91.23,\r\n    \"mutation\": +15.57,\r\n    \"endBalance\": 106.8\r\n  },\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL69ABNA0433647324\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 86.66,\r\n    \"mutation\": +44.5,\r\n    \"endBalance\": 131.16\r\n  },\r\n  {\r\n    \"reference\": 183356,\r\n    \"accountNumber\": \"NL74ABNA0248990274\",\r\n    \"description\": \"Subscription for Peter de Vries\",\r\n    \"startBalance\": 92.98,\r\n    \"mutation\": -46.65,\r\n    \"endBalance\":46.33\r\n  }\r\n]"
+		},
+		{
+			"id": "870afa03-bc36-88ff-685a-ddda2a0de698",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1595864552878,
+			"name": "NO duplicate reference and In correct balance",
+			"description": "",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"responses": [],
+			"rawModeData": "[\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL91RABO0315273637\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 21.6,\r\n    \"mutation\": -41.83,\r\n    \"endBalance\": -20.23\r\n  },\r\n  {\r\n    \"reference\": 112806,\r\n    \"accountNumber\": \"NL27SNSB0917829871\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 91.23,\r\n    \"mutation\": \"+15.57\",\r\n    \"endBalance\": 106.8\r\n  },\r\n  {\r\n    \"reference\": 183049,\r\n    \"accountNumber\": \"NL69ABNA0433647324\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 86.66,\r\n    \"mutation\": +44.5,\r\n    \"endBalance\": 131.16\r\n  },\r\n  {\r\n    \"reference\": 183356,\r\n    \"accountNumber\": \"NL74ABNA0248990274\",\r\n    \"description\": \"Subscription for Peter de Vries\",\r\n    \"startBalance\": 92.98,\r\n    \"mutation\": -46.65,\r\n    \"endBalance\":46.33\r\n  },\r\n  {\r\n    \"reference\": 139524,\r\n    \"accountNumber\": \"NL43AEGO0773393871\",\r\n    \"description\": \"Flowers from Jan Bakker\",\r\n    \"startBalance\": 99.44,\r\n    \"mutation\": +41.23,\r\n    \"endBalance\":1.67\r\n  }\r\n]"
+		},
+		{
+			"id": "a0d593d6-6e52-a205-40f4-04576e6b0486",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "NO duplicate reference and correct end balance ",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595862123375,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL91RABO0315273637\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 21.6,\r\n    \"mutation\": -41.83,\r\n    \"endBalance\": -20.23\r\n  },\r\n  {\r\n    \"reference\": 112806,\r\n    \"accountNumber\": \"NL27SNSB0917829871\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 91.23,\r\n    \"mutation\": +15.57,\r\n    \"endBalance\": 106.8\r\n  },\r\n  {\r\n    \"reference\": 183049,\r\n    \"accountNumber\": \"NL69ABNA0433647324\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 86.66,\r\n    \"mutation\": +44.5,\r\n    \"endBalance\": 131.16\r\n  },\r\n  {\r\n    \"reference\": 183356,\r\n    \"accountNumber\": \"NL74ABNA0248990274\",\r\n    \"description\": \"Subscription for Peter de Vries\",\r\n    \"startBalance\": 92.98,\r\n    \"mutation\": -46.65,\r\n    \"endBalance\":46.33\r\n  }\r\n]"
+		},
+		{
+			"id": "c723ede4-986c-e58a-f027-7e841d74bfd4",
+			"headers": "Content-Type: text/plain\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/process/customer",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7afac955-c3a7-4627-58aa-1590a544d7b3",
+			"data": [],
+			"dataMode": "raw",
+			"name": "duplicate reference and In correct balance",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595862752337,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "[\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL91RABO0315273637\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 21.6,\r\n    \"mutation\": -41.83,\r\n    \"endBalance\": -20.23\r\n  },\r\n  {\r\n    \"reference\": 194261,\r\n    \"accountNumber\": \"NL27SNSB0917829871\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 91.23,\r\n    \"mutation\": +15.57,\r\n    \"endBalance\": 106.8\r\n  },\r\n  {\r\n    \"reference\": 183049,\r\n    \"accountNumber\": \"NL69ABNA0433647324\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 91.23,\r\n    \"mutation\": +44.5,\r\n    \"endBalance\": 131.16\r\n  },\r\n  {\r\n    \"reference\": 183356,\r\n    \"accountNumber\": \"NL74ABNA0248990274\",\r\n    \"description\": \"Clothes from Jan Bakker\",\r\n    \"startBalance\": 92.98,\r\n    \"mutation\": -46.65,\r\n    \"endBalance\":46.33\r\n  }\r\n]"
+		}
+	]
+}
